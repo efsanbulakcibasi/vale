@@ -1,0 +1,48 @@
+@import "../../Base/Global.scss";
+@import "../../Base/Colour.scss";
+
+/* Common xs1, xs2 mobil*/
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .header-01 {
+        background-color: #FECD07;
+        .c-wrapper {
+            .a-item{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                h1{
+                    font-size: 23px;
+                    font-family: cursive;
+                    color: #18826A;
+                }
+            }
+         
+        }
+        .icon-item{
+            display: flex;
+            justify-content: space-around;
+            .icon-item-A{
+                width: 35px;
+                height: 35px;
+            }
+
+        }
+    }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .header-01 {
+        .c-wrapper {
+        }
+    }
+}
+
+/* Common  md, lg, xl, xxl desktop*/
+@media all and (min-width: #{$mq-md + "px"}) {
+    .header-01 {
+        .c-wrapper {
+          
+        }
+    }
+}
